@@ -1,0 +1,12 @@
+{
+	"name": "No Forced Windows",
+	"version": "1.0",
+	"description": "Many sites like to open links in a new window/tab by using target=\"_blank\", this extension switches those to target=\"_top\" to save the frame removal without opening a new tab.",
+	"content_scripts": [{
+		"matches": ["http://*/*", "https://*/*"],
+		"js": ["remove_targets.js"],
+		"run_at": "document_idle",
+		"all_frames": true
+	}]
+}
+
