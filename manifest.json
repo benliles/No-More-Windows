@@ -2,11 +2,11 @@
 	"name": "No More Windows",
 	"version": "1.0",
 	"description": "Removes forced tab/window opening on websites",
-	"default_locale": "en",
 	"icons": {
 		"32": "icon32.png",
 		"48": "icon48.png",
-		"128": "icon128.png"},
+		"128": "icon128.png",
+		"512": "icon512.png"},
 	"content_scripts": [{
 		"matches": ["http://*/*", "https://*/*"],
 		"js": ["remove_targets.js"],
