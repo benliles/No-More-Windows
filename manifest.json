@@ -1,7 +1,12 @@
 {
-	"name": "No Forced Windows",
+	"name": "No More Windows",
 	"version": "1.0",
-	"description": "Many sites like to open links in a new window/tab by using target=\"_blank\", this extension switches those to target=\"_top\" to save the frame removal without opening a new tab.",
+	"description": "Removes forced tab/window opening on websites",
+	"default_locale": "en",
+	"icons": {
+		"32": "icon32.png",
+		"48": "icon48.png",
+		"128": "icon128.png"},
 	"content_scripts": [{
 		"matches": ["http://*/*", "https://*/*"],
 		"js": ["remove_targets.js"],
